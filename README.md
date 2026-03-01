@@ -62,12 +62,6 @@ development of this project. Their motivation and love have been a constant sour
 
 strength, making this achievement possible.
 
-```
-Parvesh
-```
-```
-2124385
-```
 
 ABOUT THE COMPANY
 
