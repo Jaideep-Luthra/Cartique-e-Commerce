@@ -1,0 +1,667 @@
+{
+	"info": {
+		"_postman_id": "a20fdd16-2cca-48b9-abb7-5bb271ee1427",
+		"name": "cartique",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37856037"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Category",
+					"item": [
+						{
+							"name": "All",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/admin/category/view",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"category",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6817adb95ac3f2ac4cdfcec7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin//category/single",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"",
+										"category",
+										"single"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Abc",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/LENOVO/Pictures/Screenshots/car.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/category/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"category",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Abc223999",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/LENOVO/Downloads/Flat 3.jpg"
+										},
+										{
+											"key": "_id",
+											"value": "6817aa365ac3f2ac4cdfcebd",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/category/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"category",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Status",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6817b66f62a214cafa29e49d",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/category/changeStatus",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"category",
+										"changeStatus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Brand",
+					"item": [
+						{
+							"name": "All",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/admin/brand/view",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"brand",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6817c04b66f335ceedb0f6f5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/brand/single",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"brand",
+										"single"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "brandName",
+											"value": "B",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/LENOVO/Downloads/logo.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/brand/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"brand",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "brandName",
+											"value": "Abc223999",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/LENOVO/Downloads/Flat 3.jpg",
+											"disabled": true
+										},
+										{
+											"key": "_id",
+											"value": "6817aa365ac3f2ac4cdfcebd",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin//brand/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"",
+										"brand",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Status",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6817b66f62a214cafa29e49d",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/brand/changeStatus",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"brand",
+										"changeStatus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryId",
+											"value": "6817aa365ac3f2ac4cdfcebd",
+											"type": "text"
+										},
+										{
+											"key": "brandId",
+											"value": "6817bf9866f335ceedb0f6ed",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Product 1",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "5000",
+											"type": "text"
+										},
+										{
+											"key": "tags",
+											"value": "A,B,C",
+											"type": "text"
+										},
+										{
+											"key": "rating",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "stock",
+											"value": "100",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Good",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/LENOVO/Downloads/logo.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/product/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"product",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/admin/product/view",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"product",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6817c04b66f335ceedb0f6f5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/product/single",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"product",
+										"single"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "brandName",
+											"value": "Abc223999",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/LENOVO/Downloads/Flat 3.jpg",
+											"disabled": true
+										},
+										{
+											"key": "_id",
+											"value": "6817aa365ac3f2ac4cdfcebd",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/product/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"product",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Status",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6817b66f62a214cafa29e49d",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/product/changeStatus",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"product",
+										"changeStatus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Category",
+					"item": [
+						{
+							"name": "View Category",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/customer/category/view",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customer",
+										"category",
+										"view"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/user/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstName",
+									"value": "Gopal",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Sharma",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "gopi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "dateOfBirth",
+									"value": "5-3-2000",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/customer/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Welcome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}",
+					"host": [
+						"{{baseUrl}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

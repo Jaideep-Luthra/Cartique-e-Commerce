@@ -1,0 +1,1632 @@
+{
+	"info": {
+		"_postman_id": "f4094389-be2d-4d87-9e24-682d38bd148e",
+		"name": "cartique",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12280253"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Category",
+					"item": [
+						{
+							"name": "All",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/admin/category/view",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"category",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "68198e3948b6316726a149a6",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin//category/single",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"",
+										"category",
+										"single"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Abcd",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/o7services/Downloads/image (4).png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/category/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"category",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Abc223999",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/o7services/Downloads/certificate.png"
+										},
+										{
+											"key": "_id",
+											"value": "68198e3948b6316726a149a6",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/category/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"category",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Status",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "68198e3948b6316726a149a6",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/category/changeStatus",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"category",
+										"changeStatus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Dashboard",
+					"item": [
+						{
+							"name": "All",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/admin/dashboard/view",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"dashboard",
+										"view"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Brand",
+					"item": [
+						{
+							"name": "All",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/admin/brand/view",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"brand",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "68198fbe48b6316726a149b7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/brand/single",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"brand",
+										"single"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "brandName",
+											"value": "Ba",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/o7services/Downloads/image (4).png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/brand/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"brand",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "brandName",
+											"value": "Abc223999",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/o7services/Downloads/user.png"
+										},
+										{
+											"key": "_id",
+											"value": "68198fbe48b6316726a149b7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/brand/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"brand",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Status",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "68198fbe48b6316726a149b7",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/brand/changeStatus",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"brand",
+										"changeStatus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryId",
+											"value": "68198c893403c911c627a851",
+											"type": "text"
+										},
+										{
+											"key": "brandId",
+											"value": "68198f5048b6316726a149b3",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Product 1",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "5000",
+											"type": "text"
+										},
+										{
+											"key": "tags",
+											"value": "A,B,C",
+											"type": "text"
+										},
+										{
+											"key": "rating",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "stock",
+											"value": "100",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Good",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/o7services/Downloads/image (4).png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/product/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"product",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/admin/product/view",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"product",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6819bb26533a53725ea333a9",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/product/single",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"product",
+										"single"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "_id",
+											"value": "6819bb26533a53725ea333a9",
+											"type": "text"
+										},
+										{
+											"key": "categoryId",
+											"value": "68198e3948b6316726a149a6",
+											"type": "text"
+										},
+										{
+											"key": "brandId",
+											"value": "68198fbe48b6316726a149b7",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Product 2",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "3000",
+											"type": "text"
+										},
+										{
+											"key": "tags",
+											"value": "xyz",
+											"type": "text"
+										},
+										{
+											"key": "rating",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "stock",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Soft fabric",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/o7services/Downloads/user.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/product/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"product",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Status",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6819bb26533a53725ea333a9",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/product/changeStatus",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"product",
+										"changeStatus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "Get All",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/admin/order/all",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"order",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6819fdfc8cf0c4084188978c",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/order/single",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"order",
+										"single"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Status",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6819fdfc8cf0c4084188978c",
+											"type": "text"
+										},
+										{
+											"key": "orderStatus",
+											"value": "Pending",
+											"description": "//Pending, Delivered, Confirmed, Shipped, Cancelled",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/order/changeStatus",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"order",
+										"changeStatus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "All",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/admin/user/all",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"user",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "changeStatus",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6819bf175f5f81534cd68116",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/admin/user/changeStatus",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"user",
+										"changeStatus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Enquiry",
+					"item": [
+						{
+							"name": "All",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/admin/enquiry/all",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"admin",
+										"enquiry",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Category",
+					"item": [
+						{
+							"name": "View Category",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/category/view",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"category",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View Single Category",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "68198c893403c911c627a851",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/category/single",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"category",
+										"single"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Brand",
+					"item": [
+						{
+							"name": "View Single Brand",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "68198f5048b6316726a149b3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/brand/single",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"brand",
+										"single"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View all brand",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/brand/view",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"brand",
+										"view"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "View Single Product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6819bb1b533a53725ea333a6",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/product/single",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"product",
+										"single"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View all Product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/product/view",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"product",
+										"view"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cart",
+					"item": [
+						{
+							"name": "add to cart",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{userToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "productId",
+											"value": "6819bb1b533a53725ea333a6",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/cart/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"cart",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Cart",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{userToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/cart/all",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"cart",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Cart",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{userToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6819efe86167540de2269bec",
+											"type": "text"
+										},
+										{
+											"key": "quantity",
+											"value": "5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/cart/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"cart",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Cart",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{userToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6819efe86167540de2269bec",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/cart/delete",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"cart",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{userToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "shippingAddress",
+											"value": "Model Town Jalandhar",
+											"type": "text"
+										},
+										{
+											"key": "paymentMethod",
+											"value": "Online",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/order/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"order",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{userToken}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/order/all",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"order",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Order Details",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{userToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "orderId",
+											"value": "6821c9a1bf9f4cf5dfe7c6f1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/order/orderDetail",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"order",
+										"orderDetail"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{userToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6819fdfc8cf0c4084188978c",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/order/single",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"order",
+										"single"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Status",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{userToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6819fdfc8cf0c4084188978c",
+											"type": "text"
+										},
+										{
+											"key": "orderStatus",
+											"value": "Confirmed",
+											"description": "//Pending, Delivered, Processing, Confirmed, Shipped, Cancelled",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/order/changeStatus",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"order",
+										"changeStatus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Enquiry",
+					"item": [
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{userToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "testing 2",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "this is demo enquiry",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/enquiry/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"enquiry",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "68198c893403c911c627a851",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customerapi/enquiry/all",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customerapi",
+										"enquiry",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Register Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstName",
+									"value": "User",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "user1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "dateOfBirth",
+									"value": "2000-04-20",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/customer/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/user/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{userToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/customerapi/customer/profile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"customerapi",
+								"customer",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "oldPassword",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/password/change",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"password",
+								"change"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Welcome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}",
+					"host": [
+						"{{baseUrl}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
